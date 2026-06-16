@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot App</title>
+    <link rel="stylesheet" th:href="@{/statics/login.css}" />
+</head>
+<body>
+<h1>Imagination Banking</h1>
+    <form>
+        <fieldset>
+            <legend>Login</legend>
+            <div>
+                <label for="userName">Username:</label>
+                <input type="text" id="userName" name="userName">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password">
+            </div>
+            <div>
+                <input type="submit" id="loginSubmit">
+            </div>
+        </fieldset>
+        <button>Create New Account</button>
+    </form>
+</body>
+</html>

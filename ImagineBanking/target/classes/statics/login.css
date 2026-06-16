@@ -1,0 +1,8 @@
+body {
+    background: midnightblue;
+}
+
+form {
+    width: 500px;
+    display: flex;
+}
