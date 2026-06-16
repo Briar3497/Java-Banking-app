@@ -11,19 +11,13 @@
 <div class="login-container">
     <!-- Sends POST request to your authentication backend -->
     <form class="login-form" th:action="@{/home}">
-        <h2>Welcome Back</h2>
-        <p>Please enter your details to sign in.</p>
+        <h2>Create new account</h2>
+        <p>Please enter your details to sign up.</p>
 
         <!-- Conditional Error Alert Message Box -->
         <div th:if="${param.error}" class="error-message"
              style="color: #d9534f; background: #fdf7f7; padding: 0.5rem; border-radius: 4px; margin-bottom: 1rem; font-size: 0.85rem;">
             Invalid username or password.
-        </div>
-
-        <!-- Conditional Logout Success Notification Message Box -->
-        <div th:if="${param.logout}" class="logout-message"
-             style="color: #5cb85c; background: #fcf8e3; padding: 0.5rem; border-radius: 4px; margin-bottom: 1rem; font-size: 0.85rem;">
-            You have been signed out successfully.
         </div>
 
         <div class="input-group">
@@ -36,18 +30,15 @@
             <input type="password" id="password" name="password" placeholder="Enter password" required>
         </div>
 
-        <div class="form-actions">
-            <label class="remember-me">
-                <input type="checkbox" name="remember-me"> Remember me
-            </label>
-            <a th:href="@{/forgot-password}" class="forgot-password">Forgot password?</a>
+        <div class="input-group">
+            <label for="confirm-password">Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Enter password" required>
         </div>
 
-        <button type="submit" class="login-btn">Sign In</button>
+        <button type="submit" class="login-btn">Create Account</button>
 
-        <p class="signup-link">Don't have an account? <a th:href="@{/register}">Sign up</a></p>
+        <p class="signup-link">Already have an account? <a th:href="@{/}">Login to Account</a></p>
     </form>
 </div>
 </body>
 </html>
-
