@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ImagineBanking/ImagineBanking.iml" filepath="$PROJECT_DIR$/ImagineBanking/ImagineBanking.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-Banking-app.iml" filepath="$PROJECT_DIR$/.idea/Java-Banking-app.iml" />
     </modules>
   </component>
