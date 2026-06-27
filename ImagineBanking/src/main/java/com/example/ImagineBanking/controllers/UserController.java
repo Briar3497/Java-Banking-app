@@ -11,12 +11,12 @@ public class UserController {
 
     @GetMapping("/user")
     public String showHomeScreen() {
-        return "user";
+        return "userAccount";
     }
 
     @PostMapping("/user")
     public String saveUser(@RequestParam String username, Model model) {
         model.addAttribute("savedUsername", username);
-        return "user";
+        return "userAccount";
     }
 }
