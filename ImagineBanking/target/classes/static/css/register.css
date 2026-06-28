@@ -1,6 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 10px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 header {
@@ -15,5 +24,107 @@ header {
     }
 }
 
+div {
+    padding: 10px;
+}
 
+#user-info-container {
 
+    .input-group input {
+        width: 85%
+    }
+
+    .input-group label {
+        display: block;
+    }
+}
+
+#account-info-container {
+
+    div #initial-deposit {
+        display: block;
+        margin-bottom: 8px;
+    }
+}
+
+#signature-container {
+
+    .input-group label {
+        display: block;
+    }
+}
+
+#login-info-container {
+    .input-group label {
+        display: block;
+    }
+}
+
+fieldset {
+    border-radius: 5px;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.login-form h2 {
+    color: #333333;
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.input-group input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.input-group label {
+    color: #444444;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Call-to-action form submission button */
+.signup-btn {
+    width: 10%;
+    padding: 0.75rem;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Interactive cursor hover presentation alteration */
+.signup-btn:hover {
+    background-color: #357abd;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+}
+
+.login-link a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
