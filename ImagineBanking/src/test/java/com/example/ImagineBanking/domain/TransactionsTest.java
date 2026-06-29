@@ -1,4 +1,4 @@
-package com.example.ImagineBanking.Domain;
+package com.example.ImagineBanking.domain;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

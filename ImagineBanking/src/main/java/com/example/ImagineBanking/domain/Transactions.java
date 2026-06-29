@@ -1,4 +1,4 @@
-package com.example.ImagineBanking.Domain;
+package com.example.ImagineBanking.domain;
 
 import jakarta.persistence.*;
 

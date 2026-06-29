@@ -1,6 +1,6 @@
 package com.example.ImagineBanking.repository;
 
-import com.example.ImagineBanking.Domain.Users;
+import com.example.ImagineBanking.domain.Users;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
