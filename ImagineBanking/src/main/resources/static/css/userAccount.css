@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 0.8fr 3fr;
+    grid-template-rows: auto 120px;
+    height: 85vh;
+    padding: 0;
+    margin: 40px;
+    grid-template-areas:
+        "header main"
+        "footer main";
+}
+
+header {
+    grid-area: header;
+    align-content: center;
+    text-align: center;
+    background: #357abd;
+    border-radius: 10px 0 0 0;
+
+    ul {
+        padding-inline-start: 0;
+    }
+
+    li {
+        list-style: none;
+        padding: 20px;
+        font-weight: bold;
+    }
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 0.25fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "overhead overhead"
+        "first-row first-row"
+        "second-row second-row";
+    background: white;
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+}
+
+#overhead {
+    grid-area: overhead;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    svg {
+        width: 35px;
+        height: 35px;
+        color: #555555;
+        margin: 0 10px 0 10px;
+        padding: 5px;
+    }
+}
+
+#first-row {
+    grid-area: first-row;
+}
+
+#second-row {
+    grid-area: second-row;
+}
+
+footer {
+    display: flex;
+    grid-area: footer;
+    background: #357abd;
+    border-radius: 0 0 0 10px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+     color: #e4e4e4;
+     cursor: pointer;
+}
+
+/* 2. When hovering anywhere on the SVG, trigger the color change */
+.bell-icon:hover .bell-body {
+    stroke: #989595; /* Changes the outline to orange/red */
+}
+
+.bell-icon:hover .bell-accents {
+    fill: #989595; /* Changes the clapper and handle to orange/red */
+}
+
+/* target the shapes to change their color globally */
+.search-icon:hover .search-circle,
+.search-icon:hover .search-stick {
+    /* 🎨 SET YOUR NEW COLOR HERE */
+    stroke: #989595;
+}
+
+
